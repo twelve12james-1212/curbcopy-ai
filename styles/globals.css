@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --teal: #1D9E75;
+  --teal-dark: #0F6E56;
+  --teal-bg: #E1F5EE;
+  --teal-text: #0F6E56;
+  --bg: #F7F6F3;
+  --surface: #ffffff;
+  --surface2: #F3F2EF;
+  --border: rgba(0,0,0,0.1);
+  --border-med: rgba(0,0,0,0.18);
+  --text: #1a1a1a;
+  --text2: #555;
+  --text3: #888;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --danger-bg: #fef2f2;
+  --danger-border: #fca5a5;
+  --danger-text: #991b1b;
+}
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}

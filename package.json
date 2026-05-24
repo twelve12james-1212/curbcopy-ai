@@ -1,0 +1,16 @@
+{
+  "name": "real-estate-content-generator",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
+    "next": "^16.2.6",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
