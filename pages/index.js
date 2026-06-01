@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 
+const FREE_LIMIT = 5;
+const COOKIE_KEY = "cc_uses";
 const STRIPE_SINGLE = "https://buy.stripe.com/00w9ATg8l4kX6076nC93y00";
 const STRIPE_AGENCY = "https://buy.stripe.com/8x25kD09n9Fh88f7rG93y01";
 
@@ -156,7 +158,7 @@ export default function Home() {
               <div style={{...s.planCard, ...s.planCardFeatured}}>
                 <div style={s.planBadge}>Most popular</div>
                 <div style={{...s.planName, color:"#fff"}}>Agency</div>
-                <div style={{...s.planPrice, color:"#fff"}}><span style={s.planDollar}>$</span>79<span style={{...s.planPer, color:"rgba(255,255,255,.7)"}}/mo</span></div>
+                <div style={{...s.planPrice, color:"#fff"}}><span style={s.planDollar}>$</span>79<span style={{...s.planPer, color:"rgba(255,255,255,.7)"}}>/mo</span></div>
                 <ul style={{...s.planFeatures, color:"rgba(255,255,255,.85)"}}>
                   <li>✓ 200 generations / month</li>
                   <li>✓ All 6 tone styles</li>
@@ -476,4 +478,3 @@ const s = {
   planFeatures:{ listStyle:"none", margin:"1rem 0", display:"flex", flexDirection:"column", gap:5, fontSize:".8rem", color:"#555" },
   planBtn:   { display:"block", width:"100%", padding:"10px", borderRadius:10, border:"none", fontFamily:"'DM Sans',sans-serif", fontWeight:500, fontSize:".88rem", cursor:"pointer", marginTop:"1rem", textAlign:"center" },
 };
-
