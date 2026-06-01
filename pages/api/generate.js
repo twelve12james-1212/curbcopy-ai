@@ -58,7 +58,7 @@ Return ONLY a valid JSON object (no markdown, no backticks, no preamble) with th
 
   try {
     const message = await client.messages.create({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-sonnet-4-5",
       max_tokens: 1500,
       messages: [{ role: "user", content: prompt }],
     });
