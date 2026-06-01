@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 
-const FREE_LIMIT = 5;
-const COOKIE_KEY = "cc_uses";
-// ─── Replace these with your real Stripe Payment Links ───
 const STRIPE_SINGLE = "https://buy.stripe.com/00w9ATg8l4kX6076nC93y00";
 const STRIPE_AGENCY = "https://buy.stripe.com/8x25kD09n9Fh88f7rG93y01";
 // ─────────────────────────────────────────────────────────
