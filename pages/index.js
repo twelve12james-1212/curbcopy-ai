@@ -136,7 +136,19 @@ export default function Home() {
             <button onClick={() => setShowPaywall(false)} style={s.modalClose}>✕</button>
             <div style={s.modalLogo}>⌂ CurbCopy<span style={{color:"#1D9E75"}}>.ai</span></div>
             <h2 style={s.modalTitle}>You've used all 5 free generations</h2>
-            <p style={s.modalSub}>Upgrade to keep creating listings — cancel any time.</p>
+            <p style={s.modalSub}>Upgrade to keep creating listings — or drop your email and we'll stay in touch.</p>
+
+            {/* AWeber email capture */}
+            <div style={{marginBottom:"1.25rem", borderRadius:10, overflow:"hidden", border:"0.5px solid rgba(0,0,0,0.1)"}}>
+              <iframe
+                src="https://sjdynamicsolutions.aweb.page/simplify-life-curbcopy-ai"
+                width="100%"
+                height="180"
+                frameBorder="0"
+                scrolling="no"
+                style={{display:"block", background:"#fff"}}
+              />
+            </div>
 
             <div style={s.planRow}>
               {/* Single Agent */}
